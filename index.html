@@ -25,20 +25,24 @@
 <p class="updated">Last updated: 14 August 2026</p>
 
 <p>Roam.Do is a travel checklist app. Everything you write in it stays on your
-device. Two supporting services — one for purchases, one for crash reports —
-do connect to the internet, and this policy explains exactly what they send.</p>
+device. Three supporting services — one for purchases, one for crash reports,
+and one for basic usage analytics — do connect to the internet, and this
+policy explains exactly what they send.</p>
 
 <h2>Summary</h2>
 <p>Your lists, items, notes and photos never leave your device. There are no
-accounts, no advertising, no third-party tracking, and nothing that profiles you
-or builds a picture of who you are.</p>
-<p>Two things do use the network, and neither can see your list content:</p>
+accounts and no advertising. Nothing sent by any of the services below is
+linked to your name, email, or identity, and none of it can see your list
+content.</p>
+<p>Three things use the network:</p>
 <ul>
   <li><strong>Purchases</strong> are handled by RevenueCat, working with Google
       Play.</li>
   <li><strong>Crash reports</strong> are sent to Firebase Crashlytics, a Google
       service, so that bugs which make the app close unexpectedly can be found
       and fixed.</li>
+  <li><strong>Usage analytics</strong> are sent to Firebase Analytics, a Google
+      service, so we can see which features are actually used.</li>
 </ul>
 
 <h2>What the app stores, and where</h2>
@@ -83,6 +87,22 @@ sent the next time you open the app. Google deletes crash reports after 90 days.
 See <a href="https://firebase.google.com/support/privacy">Firebase's privacy
 information</a>.</p>
 
+<p><strong>Usage analytics — Firebase Analytics.</strong> The app sends Firebase
+Analytics a small number of named events as you use it — for example that a
+list was created, an item was added, a list was completed, or that a paywall
+screen was shown or closed. It also records which screens you visit as you
+navigate the app. Alongside these events, three properties are attached to
+your device's analytics profile: the app's display language, whether you have
+Premium, and a rough bucket for how many lists you have (such as "1–2" or
+"4+") rather than an exact count.</p>
+<p>These events and properties describe what happened, never what you wrote:
+no list titles, item text, notes, links, locations, or photos are ever
+included. Firebase Analytics identifies your device using Google's standard
+analytics identifier, not your name, email, or Google account, and analytics
+collection is switched off entirely in development builds. See
+<a href="https://firebase.google.com/support/privacy">Firebase's privacy
+information</a> for how long Google retains this data and how it is used.</p>
+
 <h2>Data you choose to send</h2>
 <p>Roam.Do can export a list as a <code>.notch</code> file so you can send it to
 someone else. This only ever happens when you initiate it. You choose the
@@ -94,9 +114,9 @@ browser or maps app. Once you leave Roam.Do, that app's own privacy policy
 applies.</p>
 
 <h2>Permissions</h2>
-<p>Roam.Do declares internet and network-state permissions, which the purchase
-and crash-reporting services above require in order to work. It declares no
-location and no storage permissions.</p>
+<p>Roam.Do declares internet and network-state permissions, which the purchase,
+crash-reporting and analytics services above require in order to work. It
+declares no location and no storage permissions.</p>
 <p>The only permission it can ever ask you about is camera access, and only at
 the moment you choose to photograph an item; you can decline and pick an
 existing photo instead. Photos you select through the system picker need no
@@ -111,13 +131,17 @@ account identifier.</p>
 <p>Delete individual lists, items, or photos inside the app at any time.
 Uninstalling Roam.Do removes the database, all attached photos, and all
 preferences from your device permanently.</p>
-<p>Crash reports and purchase records sit outside the app and work differently.
-Crash reports are deleted by Google after 90 days and are not tied to any
-identifier that could be used to find yours. Purchase records are held by
-RevenueCat and Google Play for as long as needed to honour the purchase — they
-are what lets you restore it on a new device. If you want a purchase record
-removed, write to the address below and say which device and roughly when the
-purchase was made, and it will be dealt with.</p>
+<p>Crash reports, analytics data and purchase records sit outside the app and
+work differently. Crash reports are deleted by Google after 90 days and are
+not tied to any identifier that could be used to find yours. Analytics events
+and properties are retained by Google under Firebase's data retention
+settings and are likewise not tied to any identifier that could be traced
+back to you — uninstalling the app stops new analytics data from being sent,
+but does not retroactively delete what was already recorded. Purchase records
+are held by RevenueCat and Google Play for as long as needed to honour the
+purchase — they are what lets you restore it on a new device. If you want a
+purchase record removed, write to the address below and say which device and
+roughly when the purchase was made, and it will be dealt with.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the revised version will be posted at this address
