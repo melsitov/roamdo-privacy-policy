@@ -92,10 +92,12 @@ information</a>.</p>
 Analytics a small number of named events as you use it — for example that a
 list was created, an item was added, a list was completed, or that a paywall
 screen was shown or closed. It also records which screens you visit as you
-navigate the app. Alongside these events, three properties are attached to
-your device's analytics profile: the app's display language, whether you have
-Premium, and a rough bucket for how many lists you have (such as "1–2" or
-"4+") rather than an exact count.</p>
+navigate the app. Alongside these events some plain numbers are sent — how
+many lists you have, how many items were in a finished list, how long it
+stayed open. Three properties are also attached to your device's analytics
+profile: the app's display language, whether you have Premium, and a bucket
+for how many lists you have. The property is coarser than the events — a
+bucket such as "1–2" or "4+" rather than an exact figure.</p>
 <p>These events and properties describe what happened, never what you wrote:
 no list titles, item text, notes, links, locations, or photos are ever
 included. Firebase Analytics identifies your device using Google's standard
